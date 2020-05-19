@@ -1,6 +1,6 @@
 body {
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-size: auto 100vh;
   height: 100vh;
 }
@@ -24,7 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  background-color: #826C7F;
+  background-color: #826c7f;
 }
 /* fim header */
 
@@ -33,7 +33,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: #5D4E60;
+  background-color: #5d4e60;
   width: 100vw;
 }
 
@@ -56,39 +56,37 @@ header {
 
 .menu ul a:active,
 .menu ul a:hover {
-  background: #A88FAC;
+  background: #a88fac;
 }
 /* acaba menu  */
 
 /* titulos */
 
-@keyframes example {
-  0% {
-    transform: rotateZ(0deg);
-   }
-   100% {
-    transform: rotateZ(360deg);
-   }
-  }
 .titulo {
   opacity: 0.9;
   color: #f0f0f0;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  background-color: #413C58;
-  animation: example 1s linear alternate;
-  transform: scale(1.1);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  background-color: #413c58;
 }
 .titulo:hover {
   transition: 1s;
   opacity: 1;
-  color: rgb(216, 138, 241);
-
+  transform: scale(1.1);
 }
 
 .site-subtitle,
 .site-title {
   text-align: center;
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
 }
 
 .site-title {
@@ -105,10 +103,9 @@ header {
 
 .sobre p {
   color: #000;
-  text-indent: 4em;
-  margin-bottom: 1.4em;
+  text-indent: 2em;
   text-align: justify;
-  margin-top: 0.4em;
+  line-height: 1.4;
 }
 .sobre a {
   color: #000;
@@ -122,6 +119,13 @@ header {
 .sobre .avatar {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin-left: 2em;
+}
+h3 {
+  line-height: 1.5;
+  padding: 10px;
+  color: #000;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 .avatar {
   opacity: 0.8;
@@ -148,8 +152,8 @@ header {
     width: 50%;
   }
 }
-.portfolio{
-  background-color: #D4B2D8;
+.portfolio {
+  background-color: #d4b2d8;
 }
 .portfolio .grid {
   display: grid;
@@ -209,7 +213,7 @@ header {
 }
 .card-back {
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.7);
   height: 180px;
@@ -222,13 +226,13 @@ header {
 /* acaba imgs */
 
 /* contato  */
-.sobre  {
-  background-color: #EFCEFA;
+.sobre {
+  background-color: #efcefa;
 }
-.conteudo{
+.conteudo {
   padding: 20px;
 }
- .contato .conteudo{
+.contato .conteudo {
   padding: 30px;
 }
 .titulo .conteudo {
@@ -250,14 +254,16 @@ header {
 }
 .sobre h2,
 .contato h2,
-.portfolio h2 {
-  color: #260C1A;
+.portfolio h2,
+.habilidades h2 {
+  color: #260c1a;
   font-size: 2em;
 }
-.contato{
+.contato {
   background-color: #605770;
 }
-.contato .icons {
+.contato,
+.habilidades .icons {
   text-align: center;
 }
 
@@ -272,6 +278,27 @@ header {
 .contato a:hover {
   text-decoration: none;
   text-shadow: 0px 0px 20px #fff;
+}
+
+.conteudo-habilidades .fab {
+  font-size: 4em;
+  padding: 20px;
+}
+
+.fa-css3-alt {
+  color: #1473b5;
+}
+.fa-html5 {
+  color: #f16528;
+}
+.fa-slack {
+color: #401646;
+}
+.fa-trello {
+  color: #01a2d0;
+}
+.fa-js{
+  color: #f7e018;
 }
 
 /* acaba contato */
@@ -378,7 +405,7 @@ header {
 footer {
   text-align: center;
   padding: 40px 0;
-  background-color: #646E68;
+  background-color: #646e68;
 }
 .copyright {
   color: #fff;
