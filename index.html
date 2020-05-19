@@ -5,71 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/foto.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/ae5ed46faf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Kíria Oliveira</title>
   </head>
 
   <body>
-    <header>
+    <header class="container">
+      <div class="button-abrir">
+        <button class="menu-abrir">Abre Menu</button>
+      </div>
+
       <nav class="menu">
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+        <button class="menu-fechar">Fecha Menu</button>
+
+        <ul class="menu-principal">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
-      <div>
-        <h1 class="site-title">
-          Kíria Oliveira
-        </h1>
-        <h2 class="site-subtitle">jr. frontend developer</h2>
+      <div class="titulo">
+        <div class="conteudo" id="home">
+          <h1 class="site-title">Kíria Oliveira</h1>
+          <h2 class="site-subtitle">Frontend developer</h2>
+        </div>
       </div>
     </header>
 
-    <section class="portfolio">
-      <h2 class="site-subtitle">Portfólio</h2>
+    <section class="container sobre" id="sobre">
+      <div class="conteudo">
+        <h2 class="site-subtitle">Sobre</h2>
+        <figure class="avatar">
+          <img src="img/foto.png" alt="foto Kíria" />
+        </figure>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eligendi
+          molestiae ipsam atque ut ipsum culpa delectus. Veritatis nostrum
+          voluptatibus illum et ullam eaque? Quibusdam at praesentium corrupti
+          maiores nostrum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-      <div class="grid">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-            alt="eCommerce"
-          />
-          <figcaption>eCommerce</figcaption>
-        </figure>
-  
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/mobile-creditos-nate-grant-unsplash.jpg"
-            alt=">Mobile"
-          />
-          <figcaption>Mobile</figcaption>
-        </figure>
-  
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
-            alt="Web design"
-          />
-          <figcaption>Web design</figcaption>
-        </figure>
-        <figure>
-          <img
-            class="img-portfolio"
-            src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-            alt="Projetos pessoais"
-          />
-          <figcaption>Projetos pessoais</figcaption>
-        </figure>
-
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Esse site foi construido durante a
+          <a href="https://www.alura.com.br/imersao-css"
+            >Imersão CSS da Alura ;)
+          </a>
+        </p>
       </div>
-      
     </section>
+
+    <section class="container portfolio" id="portfolio">
+      <div class="conteudo">
+        <h2 class="site-subtitle">Projetos</h2>
+
+        <div class="grid">
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <a
+                  href="https://kiriacassiaoliveira.github.io/Barbearia-shop/index.html"
+                >
+                  <img
+                    class="img-portfolio"
+                    src="./img/img-html-css.jpg"
+                    alt="imagem icones html e css"
+                />
+              </figure>
+              <div class="card-back">
+                 Página produzida no curso de HTML e CSS da Alura, com foco em posicionamentos.
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <a
+                  href="https://kiriacassiaoliveira.github.io/ClinicaNutricao/"
+                >
+                  <img
+                    class="img-portfolio"
+                    src="./img/js.png"
+                    alt="imagem icone java script"
+                  />
+               
+              </figure>
+              <div class="card-back">
+               Página produzida no curso de Java script da Alura, com foco na linguagem Java Script.
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <a href="https://kiriacassiaoliveira.github.io/design_responsivo/">
+                <img
+                  class="img-portfolio"
+                  src="./img/mobile.png"
+                  alt="imagem celular"
+                /> 
+              </figure>
+              <div class="card-back">
+               Página produzida no curso de design responsivo da Alura, com foco em usabilidade e mobile first.
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato container" id="contato">
+      <div class="conteudo">
+        <div class="grid icons">
+          <h2 class="site-subtitle">Contato</h2>
+          <i class="fa fa-angle-double-down icone"></i>
+          <a target="_blank" href="https://github.com/KiriaCassiaOliveira">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/Kria42212358">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/kiriacassia/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:kiriacsoliveira@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="copyright">&copy; Copyright Dev Kíria - 2020</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
